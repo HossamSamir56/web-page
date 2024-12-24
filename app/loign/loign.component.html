@@ -1,0 +1,23 @@
+<div class="login-container">
+  <h1>SUTRA</h1>
+
+  <label for="username">Username</label>
+  <input
+    type="text"
+    id="username"
+    [(ngModel)]="username"
+    placeholder="Enter username"
+  />
+
+  <label for="password">Password</label>
+  <input
+    type="password"
+    [(ngModel)]="password"
+    id="password"
+    maxlength="16"
+    minlength="8"
+    placeholder="Enter password"
+  />
+
+  <button (click)="onSubmit()" class="submit-btn">SUBMIT</button>
+</div>
